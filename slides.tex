@@ -385,7 +385,9 @@
     \pause
   \item \texttt {abstract-robot-dynamics}: abstraction for humanoid robot description,
     \pause
-  \item \texttt {jrl-dynamics}: implementation of the above abstract interfaces.
+  \item \texttt {jrl-dynamics}: implementation of the above abstract interfaces,
+    \pause
+  \item \texttt {jrl-walkgen}: ZMP based dynamic walk generation.
 \end{itemize}
 \end{frame}
 
@@ -668,6 +670,21 @@ Class \texttt {FeatureAbstract}
 \end{frame}
 
 %
+%  \texttt {sot-pattern-generator}
+%
+
+\begin{frame} {\texttt{sot-pattern-generator}}
+  \texttt{dynamic\_graph.sot.pattern\_generator} 
+  \begin{itemize}
+  \item Entity \texttt{PatternGenerator} produces walk motions as
+    \begin{itemize}
+      \item position and velocity of the feet
+      \item position and velocity of the center of mass
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+%
 %  Packages specific to robots
 %
 \begin{frame} {Packages specific to robots}
@@ -680,6 +697,10 @@ Class \texttt {FeatureAbstract}
       \item an entity \texttt{Dynamic},
       \item an entity \texttt{Device} (interface with the robot control system)
     \end{itemize}
+  \end{itemize}
+  \texttt {sot-hrprtc-hrp2}
+  \begin{itemize}
+  \item provide an RTC component to integrate sot-hrp2 into the robot controller.
   \end{itemize}
 \end{frame}
 
@@ -717,19 +738,25 @@ Class \texttt {FeatureAbstract}
     cd motion/sot-dynamic\\
     make install}
   \end{itemize}
-  \pause
+\end{frame}
+
+\begin{frame} {Installation}
   Through github:
   \begin{itemize}
   \item \texttt {\tiny
-    git clone git://github.com/jrl-umi3218/jrl-mal.git\\
-    git clone git://github.com/jrl-umi3218/jrl-mathtools.git\\
-    git clone git://github.com/laas/abstract-robot-dynamics.git\\
-    git clone git://github.com/jrl-umi3218/jrl-dynamics.git\\
-    git clone git://github.com/jrl-umi3218/dynamic-graph.git\\
-    git clone git://github.com/jrl-umi3218/dynamic-graph-python.git\\
-    git clone git://github.com/jrl-umi3218/sot-core.git\\
-    git clone git://github.com/laas/sot-tools.git\\
-    git clone git://github.com/jrl-umi3218/sot-dynamic.git
+    git clone --recursive git://github.com/jrl-umi3218/jrl-mal.git\\
+    git clone --recursive git://github.com/jrl-umi3218/jrl-mathtools.git\\
+    git clone --recursive git://github.com/laas/abstract-robot-dynamics.git\\
+    git clone --recursive git://github.com/jrl-umi3218/jrl-dynamics.git\\
+    git clone --recursive git://github.com/jrl-umi3218/jrl-walkgen.git\\
+    git clone --recursive git://github.com/jrl-umi3218/dynamic-graph.git\\
+    git clone --recursive git://github.com/jrl-umi3218/dynamic-graph-python.git\\
+    git clone --recursive git://github.com/jrl-umi3218/sot-core.git\\
+    git clone --recursive git://github.com/laas/sot-tools.git\\
+    git clone --recursive git://github.com/jrl-umi3218/sot-dynamic.git\\
+    git clone --recursive git://github.com/jrl-umi3218/sot-pattern-generator.git\\
+    git clone --recursive git://github.com/laas/sot-hrp2.git\\
+    git clone --recursive git://github.com/laas/sot-hrprtc-hrp2.git\\
   }
     \pause
   \item for each package,\\
