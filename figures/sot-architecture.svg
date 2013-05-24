@@ -180,7 +180,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1"
      inkscape:cx="-343.85288"
-     inkscape:cy="455.70798"
+     inkscape:cy="815.70798"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -197,7 +197,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -686,39 +686,31 @@
        id="path5407"
        inkscape:connector-curvature="0" />
     <g
-       id="g4079"
-       transform="translate(-88.5,-2)">
-      <g
-         transform="matrix(1.1598146,0,0,1,-5.6594334,0)"
-         id="g3120">
-        <path
-           style="fill:none;stroke:#000000;stroke-width:0.97585464px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="M 35.662115,115.66879 178.59363,114.7838 178.84325,176.01516 35.4125,175.20068 z"
-           id="path2955-7-4-2-2-7"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="ccccc" />
-        <path
-           style="fill:none;stroke:#000000;stroke-width:1.37817597;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           d="m 35.545404,115.73527 142.927516,-0.5 -0.23742,-33 -142.452675,0.5 z"
-           id="path3055-6-7-2-2-6"
-           inkscape:connector-curvature="0" />
-      </g>
-      <text
-         sodipodi:linespacing="125%"
-         id="text5393-5"
-         y="107.47926"
-         x="47.936371"
-         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0;word-spacing:0;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
-         xml:space="preserve"><tspan
-           y="107.47926"
-           x="47.936371"
-           id="tspan5395-8"
-           sodipodi:role="line">sot-hrp2-rtc</tspan><tspan
-           y="132.47926"
-           x="47.936371"
-           sodipodi:role="line"
-           id="tspan3110" /></text>
+       id="g3120"
+       transform="matrix(1.1598146,0,0,1,-94.159433,-2)">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2955-7-4-2-2-7"
+         d="M 35.662115,115.66879 178.59363,114.7838 178.84325,176.01516 35.4125,175.20068 z"
+         style="fill:none;stroke:#000000;stroke-width:0.97585464px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3055-6-7-2-2-6"
+         d="m 35.545404,115.73527 142.927516,-0.5 -0.23742,-33 -142.452675,0.5 z"
+         style="fill:none;stroke:#000000;stroke-width:1.37817597;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0;word-spacing:0;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       x="-40.563629"
+       y="105.47926"
+       id="text5393-5"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3017">sot-hrprtc-hrp2</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3019"></tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-21);stroke-miterlimit:4;stroke-dasharray:none"
        d="m 513,340.36218 -71.5,-39.5 0,0 0,0"
@@ -939,26 +931,24 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
        x="-46"
        y="149.36218"
        id="text4182"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
-         id="tspan4184"
-         x="-46"
-         y="149.36218">OpenHRP-3.0.7</tspan></text>
+         id="tspan3011">OpenHRP-3.1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVu Sans"
        x="158.2041"
        y="148.70398"
        id="text4182-5"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="100%"><tspan
          sodipodi:role="line"
-         id="tspan4213">OpenHRP-3.1.0</tspan><tspan
+         id="tspan3013">OpenHRP-3.0</tspan><tspan
          sodipodi:role="line"
-         id="tspan4215"></tspan></text>
+         id="tspan3015"></tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-21-8)"
        d="m -227,339.36218 298.5,-39"
