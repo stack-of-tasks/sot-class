@@ -797,3 +797,123 @@ Class \texttt {FeatureAbstract}
 
   Then follow instructions in \texttt{\tiny sot-hrprtc/README.md}: \texttt{https://github.com/stack-of-tasks/sot-hrprtc-hrp2}
 \end{frame}
+
+
+\begin{frame} {Cheat sheet (1/2)}
+ \begin{columns}
+  \begin{column}[t]{5cm}
+{\tiny
+\textbf{==== General commands ===}\\
+
+\texttt{entity.help()}\\
+\# displays the help for an entity, namely the commands with the description\\
+
+\texttt{entity.commands()}\\
+\# displays the commands of an entity, without description\\
+
+\texttt{entity.displaySignals()}\\
+\# lists the signals of an entity, indicates whether they are plugged or not.\\
+
+\texttt{entity.signal.value}\\
+\# display the current value of a signal\\
+
+\texttt{entity.signal.time}\\
+\# display the computation time of the signal.\\
+
+\texttt{entity.signal.recompute(T)}\\
+\# force the recomputation of the signal for time T (only effective it the given time is greater than the current time).\\
+~\\
+\textbf{=== Signal connection ===}\\
+\texttt{plug (e1.signal1, e2.signal2)}\\
+\# plug signals. \\
+
+\texttt{entity.signal.unplug()}\\
+\# unplug signal.\\
+
+\texttt{entity.signal.deps}\\
+\# displays the signals linked to entity.signal\\
+~\\
+}
+
+
+
+  \end{column}
+  \begin{column}[t]{5cm}
+{\tiny
+\textbf{=== solver ===}~\\
+Wraps the solver entity
+
+\texttt{solver.sot}
+\# direct access  to the sot entity\\
+\texttt{solver.push(task)}\\
+\# push a task in the sot\\
+\texttt{solver.remove(task)}\\
+\# remove a task from the sot\\
+~\\
+
+\textbf{=== SoT entity ===}\\
+Possible entities: SOT/ SoTKine / SoTDyn\\
+
+\texttt{sot}  	\# display the sot\\
+\texttt{sot.clear()}\\
+\# remove all tasks, (but leave the contacts)\\
+\texttt{sot.rm(task\_name)}\\
+\# remove given task.\\
+\texttt{sot.push(task\_name)}\\
+\# insert task.\\
+\texttt{sot.pop()}\\
+\# remove last task.\\
+\texttt{sot.up(task\_name)}\\
+\# lower the priority of the task\\
+\texttt{sot.down (task\_name)}\\
+\# increase the priority of the task.\\
+\texttt{sot.addContact(contact.name)}\\
+\texttt{sot.rmContact(contact.name)}\\
+\# add / remove a contact\\
+}
+
+
+  \end{column}
+ \end{columns}
+\end{frame}
+
+
+
+
+\begin{frame} {Cheat sheet (2/2)}
+ \begin{columns}
+  \begin{column}[t]{5cm}
+{\tiny
+\textbf{=== Entity creation ===}\\
+\texttt{name = EntityType('name')}\\
+\# create an EntityType called name\\
+~\\
+\textbf{=== Feature entity ===}\\
+Entities: Feature1D, Feature3D, Feature6D, FeatureGeneric, FeatureVisualPoint\\
+\texttt{feature.setReference(featureDes.name)}\\
+\# defines the desired value signal\\
+\texttt{feature.selec.value = '10…'}\\
+\# limits the dof considered by the feature (1 activated / 0 not activated),
+in reverse polish notation\\
+~\\
+
+\textbf{=== Task entity ===}\\
+\texttt{task.add(feature.name)}\\
+\# associate a feature to the task.\\
+~\\
+\textbf{=== Tracer entity ===}\\
+\texttt{tracer.setBufferSize(tracerSize) }\\
+\texttt{tracer.open('folder','prefix','.extension') }\\
+\texttt{tracer.start() }\\
+\#start saving \\
+\texttt{tracer.dump()} \\
+\#write the data\\
+\texttt{tracer.stop() }\\
+\texttt{tracer.close()}\\
+}
+  \end{column}
+  \begin{column}[t]{5cm}
+  \end{column}
+ \end{columns}
+\end{frame}
+
