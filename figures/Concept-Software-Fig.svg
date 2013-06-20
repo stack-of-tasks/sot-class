@@ -14,7 +14,7 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.47 r22583"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="Concept-Software-Fig.svg">
   <sodipodi:namedview
      id="base"
@@ -33,10 +33,10 @@
      inkscape:snap-bbox="true"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1552"
-     inkscape:window-height="849"
-     inkscape:window-x="48"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1005"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:snap-global="false">
     <inkscape:grid
@@ -698,7 +698,7 @@
            height="277.85715"
            x="370"
            y="295.93362" /></flowRegion><flowPara
-         id="flowPara10786"></flowPara></flowRoot>    <text
+         id="flowPara10786" /></flowRoot>    <text
        xml:space="preserve"
        style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Century Schoolbook L;-inkscape-font-specification:Century Schoolbook L Medium"
        x="522.77063"
@@ -721,12 +721,13 @@
          x="559.28571"
          y="380.93362">sot-pattern-generator</tspan></text>
     <image
-       y="526.52521"
-       x="45.359543"
-       id="image7279"
-       height="194.50452"
+       sodipodi:absref="/home/florent/publication/seminar/2013sot/figures/HRP2.png"
+       xlink:href="HRP2.png"
        width="83.03846"
-       xlink:href="file:///home/ostasse/Talks/SoT-Class/sot-class/figures/HRP2.png" />
+       height="194.50452"
+       id="image7279"
+       x="45.359543"
+       y="526.52521" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend-1)"
        d="m 58.441333,586.73446 c -14.984989,-43.17537 -0.04333,-97.8683 -0.04333,-97.8683"
