@@ -13,7 +13,7 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.47 r22583"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="sot-architecture.svg">
   <defs
      id="defs4">
@@ -178,9 +178,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="-343.85288"
-     inkscape:cy="815.70798"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="495.20384"
+     inkscape:cy="766.25441"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -710,7 +710,7 @@
          sodipodi:role="line"
          id="tspan3017">sot-hrprtc-hrp2</tspan><tspan
          sodipodi:role="line"
-         id="tspan3019"></tspan></text>
+         id="tspan3019" /></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-21);stroke-miterlimit:4;stroke-dasharray:none"
        d="m 513,340.36218 -71.5,-39.5 0,0 0,0"
@@ -948,7 +948,7 @@
          sodipodi:role="line"
          id="tspan3013">OpenHRP-3.0</tspan><tspan
          sodipodi:role="line"
-         id="tspan3015"></tspan></text>
+         id="tspan3015" /></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-21-8)"
        d="m -227,339.36218 298.5,-39"
@@ -1079,5 +1079,45 @@
            id="tspan5098"
            sodipodi:role="line">ros-electric</tspan></text>
     </g>
+    <g
+       transform="translate(441.25602,-223.74398)"
+       id="g3863-9-3-3-9-7">
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path2955-7-4-2-3-8"
+         d="m 242.24579,376.7957 301.00842,-0.88499 0.52568,61.23136 -302.05978,-0.81448 z"
+         style="fill:none;stroke:#000000;stroke-width:1.41615391px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3055-6-7-2-5-4"
+         d="m 242,376.86218 301,-0.5 -0.5,-33 -300,0.5 z"
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0;word-spacing:0;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       x="700.5"
+       y="142.36218"
+       id="text4901-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3232">sot-application</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0;word-spacing:0;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
+       x="698.5"
+       y="176.86218"
+       id="text5093-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3234">-application dependent</tspan><tspan
+         sodipodi:role="line"
+         id="tspan3236"> initializations</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-21-8)"
+       d="M 531,341.36218 833.6789,212.31933"
+       id="path3238"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

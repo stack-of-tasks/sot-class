@@ -685,6 +685,20 @@ Class \texttt {FeatureAbstract}
 \end{frame}
 
 %
+%  \texttt {sot-pattern-generator}
+%
+
+\begin{frame} {\texttt{sot-application}}
+  \texttt{dynamic\_graph.sot.application} 
+  \begin{itemize}
+  \item Provide scripts for standard control graph initialization
+    \begin{itemize}
+      \item depends on application: control mode (velocity, acceleration)
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+%
 %  Packages specific to robots
 %
 \begin{frame} {Packages specific to robots}
@@ -755,8 +769,9 @@ Class \texttt {FeatureAbstract}
     git clone --recursive git://github.com/laas/sot-tools.git\\
     git clone --recursive git://github.com/jrl-umi3218/sot-dynamic.git\\
     git clone --recursive git://github.com/jrl-umi3218/sot-pattern-generator.git\\
+    git clone --recursive git://github.com/stack-of-tasks/sot-application.git\\
     git clone --recursive git://github.com/laas/sot-hrp2.git\\
-    git clone --recursive git://github.com/laas/sot-hrprtc-hrp2.git\\
+    git clone --recursive git://github.com/stack-of-tasks/sot-hrprtc-hrp2.git\\
   }
     \pause
   \item for each package,\\
@@ -797,3 +812,138 @@ Class \texttt {FeatureAbstract}
 
   Then follow instructions in \texttt{\tiny sot-hrprtc/README.md}: \texttt{https://github.com/stack-of-tasks/sot-hrprtc-hrp2}
 \end{frame}
+
+%
+%  Running the stack of tasks into OpenHRP-3.0.7
+%
+
+\begin{frame}[fragile]{Running the stack of tasks into OpenHRP-3.0.7}
+  \begin{block}{Assumptions}
+    \begin{itemize}
+      \item OpenHRP 3.0.7 is installed
+      \item The Stack of Tasks has been installed thanks to previous slide with
+        \textbf{install\_sot.sh} in the directory:
+        \begin{lstlisting}[language=bash,basicstyle=\small,frame=single,showlines=false]    
+          /home/user/devel/ros_unstable
+        \end{lstlisting}
+      \item Your /opt/grx3.0/HRP2LAAS/bin/config.sh is well setup.
+    \end{itemize}
+  \end{block}
+  \begin{block}{The golden commands}
+  \begin{lstlisting}[language=bash,basicstyle=\tiny,backgroundcolor=\color{AliceBlue}, frame=single,showlines=false]
+    $>roscore
+    #Launching HRP2 simulation with OpenHPR
+    $>roslaunch hrp2_bringup openhrp_bridge.launch robot_machine_profile:=sim
+    $>rosservice call /start_dynamic_graph 
+    $>rosrun dynamic_graph_bridge run_command
+  \end{lstlisting}
+  \end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Running the stack of tasks into OpenHRP-3.0.7}
+\begin{block}{Initialize the application: create tracer and solver}
+  \begin{lstlisting}[language=Python,basicstyle=\small,backgroundcolor=\color{AliceBlue}, frame=single,showlines=false]
+[INFO] [WallTime: 1370854858.786392] waiting for service...
+Interacting with remote server.
+>>> from dynamic_graph.sot.application.velocity.\\
+    precomputed_tasks import initialize
+>>> solver = initialize (robot)
+>>> robot.initializeTracer ()
+  \end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Running the stack of tasks into OpenHRP-3.0.7}
+\begin{block}{Build the graph including the pattern generator}
+  \begin{lstlisting}[language=Python,basicstyle=\small,backgroundcolor=\color{AliceBlue}, frame=single,showlines=false]
+[INFO] [WallTime: 1370854858.786392] waiting for service...
+Interacting with remote server.
+>>> from dynamic_graph.sot.pattern_generator.walking import CreateEverythingForPG, walkFewSteps
+With meta selector
+  \end{lstlisting}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[fragile]{Running the stack of tasks into OpenHRP-3.0.7}
+\begin{block}{Create the graph}
+  \begin{lstlisting}[language=Python,basicstyle=\small,backgroundcolor=\color{AliceBlue}, frame=single,showlines=false]
+>>> CreateEverythingForPG(robot,solver)
+At this stage
+('modelDir: ', '~/devel/ros-unstable/install/share/hrp2-14')
+('modelName:', 'HRP2JRLmainsmall.wrl')
+('specificitiesPath:', 'HRP2SpecificitiesSmall.xml')
+('jointRankPath:', 'HRP2LinkJointRankSmall.xml')
+After Task for Right and Left Feet
+  \end{lstlisting}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[fragile]{Running the stack of tasks into OpenHRP-3.0.7}
+  \begin{block}{Switch to the new graph}       
+    \begin{lstlisting}[language=Python,basicstyle=\small,backgroundcolor=\color{AliceBlue}, frame=single,showlines=false]
+>>> walkFewSteps(robot)
+>>> 
+    \end{lstlisting}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Software structure - Conceptual view}
+  \begin{figure}
+    \includegraphics[width=\linewidth]{./figures/Concept-Fig}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Software structure - Link with Model}
+  \begin{figure}
+    \includegraphics[width=\linewidth]{./figures/Concept-Theory-Fig-Finalv2M5}
+  \end{figure}
+\end{frame}
+
+%  $$ T ({\bf q}, t) = \left(\begin{array}{cc} {\bf t} (M^{* -1}(t) M ({\bf q})) \\ u_{\theta} (R^{* -1}(t) R ({\bf q})) \end{array}\right) $$
+    
+% $ J=  \frac{\partial T}{\partial {\bf q}}$
+ 
+% $\dot{T} = - \lambda T
+
+% $\dot{T} = - \lambda T - \frac{\partial T}{\partial t} $
+
+% $\dot{{\bf q}} \triangleq& -J ^{+} (\lambda T + \frac{\partial T}{\partial t} $
+
+\begin{frame}{Software structure - Link with Model}
+  \begin{figure}
+    \includegraphics[width=\linewidth]{./figures/Concept-Theory-Fig-Finalv2M4}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Software structure - Link with Model}
+  \begin{figure}
+    \includegraphics[width=\linewidth]{./figures/Concept-Theory-Fig-Finalv2M3}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Software structure - Link with Model}
+  \begin{figure}
+    \includegraphics[width=\linewidth]{./figures/Concept-Theory-Fig-Finalv2M2}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Software structure - Link with Model}
+  \begin{figure}
+    %\includegraphics[width=\linewidth]{./figures/Concept-Theory-Fig-Finalv2M1}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Software structure - Link with Model}
+  \begin{figure}
+    %\includegraphics[width=\linewidth]{./figures/Concept-Theory-Fig-Finalv2}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Software structure - Repositories}
+  \begin{figure}
+    %\includegraphics[width=\linewidth]{./figures/Concept-Software-Fig}
+  \end{figure}
+\end{frame}
+

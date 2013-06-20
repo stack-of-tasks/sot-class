@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[xcolor = {svgnames,x11names}]{beamer}
 
 \mode<presentation> {
   \usetheme{Malmoe}
@@ -26,6 +26,7 @@
 \usepackage{algorithmic}
 \usepackage{hyperref}
 \usepackage{multimedia}
+\usepackage{listings}
 
 \newcommand\vect[1]{\textbf{#1}}
 \newcommand\CS{{\cal C}}
@@ -89,6 +90,17 @@
 }
 
 \begin{document}
+
+\lstset{
+breakatwhitespace=true,
+%language=C++,
+%columns=fullflexible,
+%keepspaces=true,
+breaklines=true
+tabsize=3, 
+%showstringspaces=false,
+%extendedchars=true
+}
 
 \begin{frame}
   \titlepage

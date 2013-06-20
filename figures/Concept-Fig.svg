@@ -14,7 +14,7 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.47 r22583"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="Concept-Fig.svg">
   <defs
      id="defs4">
@@ -254,10 +254,10 @@
      inkscape:snap-bbox="true"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1552"
-     inkscape:window-height="849"
-     inkscape:window-x="48"
-     inkscape:window-y="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1005"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:snap-global="false">
     <inkscape:grid
@@ -553,12 +553,13 @@
        rx="6.5222645"
        ry="2.9408312" />
     <image
-       y="522.36218"
-       x="36.96154"
-       id="image7279"
-       height="194.50452"
+       sodipodi:absref="/home/florent/publication/seminar/2013sot/figures/HRP2.png"
+       xlink:href="HRP2.png"
        width="83.03846"
-       xlink:href="file:///home/ostasse/Talks/SoT-Class/sot-class/figures/HRP2.png" />
+       height="194.50452"
+       id="image7279"
+       x="36.96154"
+       y="522.36218" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend-1)"
        d="M 50.043329,582.57139 C 35.05834,539.39602 50,484.70309 50,484.70309"
