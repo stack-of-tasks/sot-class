@@ -307,8 +307,8 @@
   We have
   \begin{eqnarray*}
     \dot{\conf} &=& \dot{\conf}_1 + P_1 u\\
-    \dot{T}_2 &=& J_2\dot{\conf} + \frac{\partial T_2}{\partial \conf}\\
-    \dot{T}_2 &=& J_2 \dot{\conf}_1 + \frac{\partial T_2}{\partial \conf} + J_2 P_1 {\color{red}u}
+    \dot{T}_2 &=& J_2\dot{\conf} + \frac{\partial T_2}{\partial t}\\
+    \dot{T}_2 &=& J_2 \dot{\conf}_1 + \frac{\partial T_2}{\partial t} + J_2 P_1 {\color{red}u}
   \end{eqnarray*}
   \pause
   We want
@@ -318,8 +318,8 @@
   \pause
   Thus
   \begin{eqnarray*}
-    - \lambda_2 T_2 &=& J_2 \dot{\conf}_1 + \frac{\partial T_2}{\partial \conf} + J_2 P_1 {\color{red}u} \\
-    J_2 P_1 {\color{red}u} &=& - \lambda_2 T_2 - J_2 \dot{\conf}_1 - \frac{\partial T_2}{\partial \conf}
+    - \lambda_2 T_2 &=& J_2 \dot{\conf}_1 + \frac{\partial T_2}{\partial t} + J_2 P_1 {\color{red}u} \\
+    J_2 P_1 {\color{red}u} &=& - \lambda_2 T_2 - J_2 \dot{\conf}_1 - \frac{\partial T_2}{\partial t}
   \end{eqnarray*}
 \end{frame}
 
@@ -330,14 +330,14 @@
 \begin{frame} {Controlling the second task}
   Thus
   \begin{eqnarray*}
-    - \lambda_2 T_2 &=& J_2 \dot{\conf}_1 + \frac{\partial T_2}{\partial \conf} + J_2 P_1 {\color{red}u} \\
-    J_2 P_1 {\color{red}u} &=& - \lambda_2 T_2 - J_2 \dot{\conf}_1 - \frac{\partial T_2}{\partial \conf}\\
+    - \lambda_2 T_2 &=& J_2 \dot{\conf}_1 + \frac{\partial T_2}{\partial t} + J_2 P_1 {\color{red}u} \\
+    J_2 P_1 {\color{red}u} &=& - \lambda_2 T_2 - J_2 \dot{\conf}_1 - \frac{\partial T_2}{\partial t}\\
   \end{eqnarray*}
   \pause
   \begin{eqnarray*}
-    u &=& -(J_2P_1)^+(\lambda_2 T_2 + J_2 \dot{\conf}_1 + \frac{\partial T_2}{\partial \conf})\\
+    u &=& -(J_2P_1)^+(\lambda_2 T_2 + J_2 \dot{\conf}_1 + \frac{\partial T_2}{\partial t})\\
     \dot  {\conf}_2 &\triangleq& \dot{\conf}_1 + P_1 u\\
-&=& \dot{\conf}_1 - P_1(J_2P_1)^+(\lambda_2 T_2 + J_2 \dot{\conf}_1 + \frac{\partial T_2}{\partial \conf})) \\
+&=& \dot{\conf}_1 - P_1(J_2P_1)^+(\lambda_2 T_2 + J_2 \dot{\conf}_1 + \frac{\partial T_2}{\partial t})) \\
   \end{eqnarray*}
   minimizes $\|\dot{T}_2 + \lambda_2 T_2\|$ over $\dot{\conf}_1 + Ker\ J_1$.
 \end{frame}
